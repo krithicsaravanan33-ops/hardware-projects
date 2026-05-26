@@ -48,6 +48,9 @@ Register x0 is hardwired to zero per the RISC-V specification.
 ### Files
 - `reg_file.v` — Register file module
 - `reg_file_tb.v` — Testbench
+### Simulation output
+<img width="1919" height="1127" alt="image" src="https://github.com/user-attachments/assets/1754ab4c-3d6b-47c0-a71b-fcaee5d2f25c" />
+
 
 ### How to run
 ```
