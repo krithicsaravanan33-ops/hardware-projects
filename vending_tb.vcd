@@ -1,0 +1,230 @@
+$date
+	Wed May 27 12:12:27 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module vending_tb $end
+$var wire 1 ! dispense $end
+$var wire 1 " change $end
+$var reg 1 # clk $end
+$var reg 1 $ coin10 $end
+$var reg 1 % coin5 $end
+$var reg 1 & rst $end
+$var integer 32 ' dispensed [31:0] $end
+$scope module uut $end
+$var wire 1 # clk $end
+$var wire 1 $ coin10 $end
+$var wire 1 % coin5 $end
+$var wire 1 & rst $end
+$var reg 1 " change $end
+$var reg 3 ( current_state [2:0] $end
+$var reg 1 ! dispense $end
+$var reg 3 ) next_state [2:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 )
+b0 (
+bx '
+1&
+0%
+0$
+0#
+0"
+0!
+$end
+#5
+1#
+#10
+0#
+#15
+1#
+#20
+0#
+0&
+#25
+1#
+#30
+0#
+#35
+1#
+#40
+b1 )
+0#
+1%
+b0 '
+#45
+b10 )
+b1 (
+1#
+#50
+b1 )
+0#
+0%
+#55
+1#
+#60
+b10 )
+0#
+1%
+#65
+b11 )
+b10 (
+1#
+#70
+b10 )
+0#
+0%
+#75
+1#
+#80
+b11 )
+0#
+1%
+#85
+b100 )
+b11 (
+1#
+#90
+b11 )
+0#
+0%
+#95
+1#
+#100
+b100 )
+0#
+1%
+#105
+b0 )
+1!
+b100 (
+1#
+#110
+b0 (
+1&
+0!
+b0 )
+0#
+0%
+#115
+1#
+#120
+0#
+#125
+1#
+#130
+0#
+0&
+#135
+1#
+#140
+0#
+#145
+1#
+#150
+b10 )
+0#
+1$
+#155
+b100 )
+b10 (
+1#
+#160
+b10 )
+0#
+0$
+#165
+1#
+#170
+b100 )
+0#
+1$
+#175
+b0 )
+1!
+b100 (
+1#
+#180
+b0 (
+1&
+0!
+b0 )
+0#
+0$
+#185
+1#
+#190
+0#
+#195
+1#
+#200
+0#
+0&
+#205
+1#
+#210
+0#
+#215
+1#
+#220
+b10 )
+0#
+1$
+#225
+b100 )
+b10 (
+1#
+#230
+b10 )
+0#
+0$
+#235
+1#
+#240
+b11 )
+0#
+1%
+#245
+b100 )
+b11 (
+1#
+#250
+b11 )
+0#
+0%
+#255
+1#
+#260
+b101 )
+0#
+1$
+#265
+b0 )
+1"
+1!
+b101 (
+1#
+#270
+1"
+1!
+b0 )
+0#
+0$
+#275
+0"
+0!
+b0 (
+1#
+#280
+0#
+#285
+1#
+#290
+0#
