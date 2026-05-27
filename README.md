@@ -32,8 +32,7 @@ gtkwave alu_tb.vcd
 ```
 
 ### Simulation output
-<img width="1919" height="1127" alt="Screenshot 2026-05-24 220828" src="https://github.com/user-attachments/assets/4b8e02ee-92ee-4430-a791-427b0be965b3" />
-
+<img width="1919" height="1127" alt="ALU Waveform" src="https://github.com/user-attachments/assets/4b8e02ee-92ee-4430-a791-427b0be965b3" />
 
 ---
 
@@ -48,9 +47,6 @@ Register x0 is hardwired to zero per the RISC-V specification.
 ### Files
 - `reg_file.v` — Register file module
 - `reg_file_tb.v` — Testbench
-### Simulation output
-<img width="1919" height="1127" alt="image" src="https://github.com/user-attachments/assets/1754ab4c-3d6b-47c0-a71b-fcaee5d2f25c" />
-
 
 ### How to run
 ```
@@ -58,3 +54,39 @@ iverilog -o reg_file_tb reg_file_tb.v reg_file.v
 vvp reg_file_tb
 gtkwave reg_file_tb.vcd
 ```
+
+### Simulation output
+<img width="1919" height="1127" alt="Register File Waveform" src="https://github.com/user-attachments/assets/1754ab4c-3d6b-47c0-a71b-fcaee5d2f25c" />
+
+---
+
+## Project 3 — Vending Machine FSM
+
+### What it is
+A finite state machine implementing a vending machine in Verilog.
+Accepts 5 cent and 10 cent coins, dispenses an item when 20 cents
+is reached, and gives change if overpaid.
+
+### States
+| State | Meaning |
+|-------|---------|
+| IDLE | 0 cents inserted |
+| S5 | 5 cents inserted |
+| S10 | 10 cents inserted |
+| S15 | 15 cents inserted |
+| DISP | Dispense item |
+| DISP_CHG | Dispense item and give change |
+
+### Files
+- `vending.v` — FSM module
+- `vending_tb.v` — Testbench
+
+### How to run
+```
+iverilog -o vending_tb vending_tb.v vending.v
+vvp vending_tb
+gtkwave vending_tb.vcd
+```
+
+### Simulation output
+<img width="1919" height="1127" alt="Vending Machine Waveform" src="https://github.com/user-attachments/assets/e27605b9-2997-4995-acb6-66459462f543" />
