@@ -90,3 +90,24 @@ gtkwave vending_tb.vcd
 
 ### Simulation output
 <img width="1919" height="1127" alt="Vending Machine Waveform" src="https://github.com/user-attachments/assets/e27605b9-2997-4995-acb6-66459462f543" />
+
+---
+
+## Project 4 — UART Transmitter
+
+### What it is
+A UART (Universal Asynchronous Receiver Transmitter) transmitter
+implemented in Verilog. Sends an 8-bit byte serially with a start
+bit and stop bit at 9600 baud.
+
+### Files
+- `uart_tx.v` — UART transmitter module
+- `uart_tx_tb.v` — Testbench
+
+### How to run
+iverilog -o uart_tx_tb uart_tx_tb.v uart_tx.v
+vvp uart_tx_tb
+gtkwave uart_tx_tb.vcd
+
+### Simulation output
+<img width="1919" height="1131" alt="image" src="https://github.com/user-attachments/assets/7da8d900-bffd-4a21-a203-382b092cd84c" />
