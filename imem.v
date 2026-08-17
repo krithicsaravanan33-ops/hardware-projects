@@ -13,7 +13,9 @@ module imem(
         // add x3, x1, x2  →  x3 = 8
         mem[2] = 32'h002081B3;
         // fill rest with zeros
-        mem[3] = 32'h00000000;
+        mem[3] = 32'h00C00293;
+        mem[4] = 32'h00520333;
+        mem[5] = 32'h401303B3;
     end
     assign instr =mem[addr[31:2]];
 endmodule
