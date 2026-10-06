@@ -79,7 +79,7 @@ module cpu(
     alu_ctrl ALUCTRL (
         .alu_op(alu_op),
         .funct3(instr[14:12]),
-        .funct7(instr[30]),
+        .funct7(instr[30] & (instr[6:0] == 7'b0110011)),
         .alu_ctrl(alu_ctrl_out)
     );
 
